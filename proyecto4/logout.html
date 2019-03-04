@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log out</title>
+    <style>
+        #d1{
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    
+    /* diseño responsive */
+    @media all and (max-width: 1366px){
+        
+    }
+    @media all and (max-width: 900px){
+        #d1{width: 100%;}
+    }
+    @media all and (max-width: 600px){
+        
+    }
+    
+    </style>
+</head>
+<body>
+    <p>Cerrando sesion espera por favor</p>
+    <div id="d1">
+        <img src="https://i.gifer.com/Xylo.gif" style="width:100%;">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        
+            setTimeout(function(){
+                window.location.href = "index.html"; 
+            },1000);
+        
+    })
+    
+    </script>
+</body>
+</html>
