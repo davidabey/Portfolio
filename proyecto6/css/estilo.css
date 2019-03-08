@@ -1,0 +1,193 @@
+
+body{
+    background: url("https://wallpapercave.com/wp/wp2238949.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    font-family:  Arial;
+    font-size: 1.1em;
+   
+}
+#inicio{
+    float: left;
+    clear: both;
+    margin: 1% 0% 1% 35%;
+    width: 30%;
+    padding: 2%;
+    background: white;
+    border: 1.7px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    transition: all 0.5s ease;
+}
+
+
+label{
+    margin-bottom: 0.7%;
+    margin-top: 0.7%;
+}
+
+
+button, .submit{
+    background:white;
+    border: 2px solid  rgb(72, 182, 249);
+    border-radius: 3px;
+    margin: 1% 0% 1% 0%;
+    padding: 0.5%;
+    
+}
+
+
+button:hover, .submit:hover{
+    cursor: pointer;
+    background-color: rgb(135,206, 250);
+    border: 2px solid black;
+    padding: 0.5%;
+}
+
+
+.iniinput{
+    float: left;
+    clear: both;
+    margin: 0.25%;
+    padding: 1%;
+    width: 90%;
+    border: 1.7px solid grey;
+    background: transparent;
+    border-radius: 3px;
+}
+#preregistro{
+    display: none;
+    
+}
+#recuperar{
+    display: none;
+    
+}
+
+#recuperar .columna{
+    width: 50%;
+}
+
+#bienvenida{
+    width: 75%;
+    float: left;
+    clear: both;
+    margin-left: 10%;
+    padding: 2%;
+    background: white;
+    border: 1.7px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 6px 3px gray;
+    margin-bottom: 1%;
+    top: 1px;
+}
+
+#Perfil{
+    width: 75%;
+    float: left;
+    clear: both;
+    margin-left: 10%;
+    padding: 2%;
+    background: white;
+    border: 1.7px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    margin-bottom: 1%;
+   
+}
+
+#pdf{
+    width: 75%;
+    float: left;
+    clear: both;
+    margin-left: 10%;
+    padding: 2%;
+    background: white;
+    border: 1.7px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    margin-bottom: 2%;
+    
+}
+
+#imgcer, #imgper{
+    
+    float: right;
+    margin-right: 1%;
+}
+#registro{
+    width: 75%;
+    float: left;
+    clear: both;
+    margin-left: 10%;
+    padding: 2%;
+    background: white;
+    border: 1.7px solid gray;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+    margin-bottom: 1%;
+    
+    
+}
+.inputs{
+    float: left;
+    clear: both;
+    width: 80%;
+    padding: 1%;
+    background: transparent;
+    border: 1.7px solid grey;
+    border-radius: 3px;
+}
+.inputs:hover, .iniinput:hover{
+    border: 1.7px solid black;
+}
+.inputs:focus, .iniinput:focus{
+    border:2px solid #82d9ff;
+    
+}
+.fila{
+    margin: 1% 0% 1% 0%;
+    float: left;
+    width: 100%;
+    clear: both;
+}
+.columna{
+    width: 33.33%;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+.pdfbox{
+    display: none;
+    width: 90%;
+        
+}
+
+iframe{
+    float: left;
+    margin: 1% 1% 0% 0%;
+    width: 90%;
+    height: 500px;
+}
+/* diseño responsive */
+@media all and (max-width: 1366px){
+    
+}
+@media all and (max-width: 900px){
+    #inicio{ margin: 1% 0% 1% 10%;width: 80%;}
+    .columna{width: 50%;}
+    .pdfbox{width: 100%;}
+}
+@media all and (max-width: 600px){
+    #inicio{ margin: 1% 0% 1% 3%;width: 90%;}
+    #Perfil{width: 95%;margin-left:0%;}
+    #registro{width: 95%;margin-left:0%;}
+    #pdf{width: 95%;margin-left:0%;}
+    #bienvenida{width: 95%;margin-left:0%;}
+    #recuperar .columna{width: 100%;}
+    .columna{width: 100%;margin: 1%;}
+    .columna .inputs{width: 90%;}
+    iframe{width: 100%;}
+    /* .pdfbox{width: 100%;} */
+}

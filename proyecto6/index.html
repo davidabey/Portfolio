@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Log In</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+        <div id="inicio">
+        <p style="font-size:1.3em;font-weight:bold;">Inicia sesion para acceder</p>
+        <div id="resultado" style="color:red;">&nbsp;</div>
+        <div>
+            <label style="float:left;clear:both;">Nombre de usuario</label><br>
+            <input type="text" name="usuario" id="usuario" class="iniinput" autofocus="" placeholder="Usuario"><br>
+
+            <label style="float:left;clear:both;">Contraseña</label><br>
+            <input type="password" name="clave" id="clave" class="iniinput" placeholder="Clave"><br>
+            <button id="b1">Iniciar Sesion</button>
+            <button id="b2">Registrarse</button>
+            <button id="b4">Recuperar contraseña</button>
+        
+        </div>
+        <br>
+        <div id="preregistro">
+            <p style="font-size:1.3em;font-weight:bold;">Registrate con usuario y clave</p>
+            <form>
+                <label style="float:left;clear:both;">Nombre de usuario</label>
+                <input type="text" id="user" class="iniinput" required="" placeholder="Usuario"><br>
+
+                <label style="float:left;clear:both;">Contraseña</label><br>
+                <input type="password"  id="pass" class="iniinput" required="" placeholder="Clave"><br>
+                <input id="b3" class="submit" type="button" value="Registrarse"><br>
+            </form>
+        </div>
+        <div id="recuperar">
+            <p style="font-size:1.3em;font-weight:bold;">Completa este formulario para recuperar tu contraseña</p>
+            <form>
+                <div class="fila">
+                    <div class="columna">
+                        <label style="float:left;clear:both;">Nombre de usuario</label>
+                        <input class="iniinput" type="text" name="usu2" id="usu2" maxlength="9" required="">
+                    </div>
+                    <div class="columna">
+                        <label style="float:left;clear:both;">NIF</label>
+                        <input class="iniinput" type="text" name="nif2" id="nif2" maxlength="9" required="">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna">
+                        <label style="float:left;clear:both;">Fecha de nacimiento</label>
+                        <input class="iniinput" type="date" name="fecha_nac2" id="fecha_nac2" required=""><br>
+                    </div>
+                </div>
+            </form>
+            <br><button id="brecup">Recuperar</button> 
+            <div id="resultado2" style="color:red;">
+                Tu clave es: <input type="text" value="" id="password" class="iniinput" readonly="">
+                <br><button id="showpass">Mostar/Ocultar</button>
+                <button id="copy">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/f1.js" type="text/javascript"></script>
+</body>
+</html>

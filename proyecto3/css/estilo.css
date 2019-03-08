@@ -1,161 +1,579 @@
-/* animacion de scroll */
-html{
-    scroll-behavior: smooth;
+
+*{
+    padding: 0;
+    margin:0;
+    
 }
 body{
-    background: url("../img/fondo2.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    font-family:  Roboto, sans-serif;
+    background: rgb(65, 65, 65);
+}
+#misfotos{
+    width: 90%;
+   
+    margin: 0% 5% 0% 5%;
 }
 
-/* estilo de las cajas con los articulos */
-.cajas{
-    float: left;
-    width: 31%;
-    margin: 1%;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 3px 3px grey;
-    text-decoration: none;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.95);
+#inicio{
+    width: 100%;
+    height: 100%;
+    position: relative;
     
 }
-
-/* animacion de las cajas */
-.cajas:hover{
-    color: blue;
-    border: 1px solid blue;
+#container{
+    width: 100%;  
 }
-
-/* animacion de la imagen de las cajas */
-.cajas:hover .img {
-    filter: brightness(150%);
-}
-.img{
+.fondo{
     width: 100%;
 }
+.imag1{
+    /* width: 80px;
+    height: 90px;
+    margin-top: -95px;
+    margin-left: -290px;
+    left: 50%;
+    top: 50%;
+    position: absolute;    */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+}
+.imag2{
+    /*
+    margin-top: -5px;
+    margin-left: -290px;
+    left: 50%;
+    top: 50%;
+    position: absolute;    */
+     width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0%;
+    left: 55%;
+}
+#i1{
+/*
+margin-top: 590px;
+margin-left: 50px;*/
+background-color: rgb(41, 41, 41);
 
-/* estilo de la caja numero de comentarios */
-.numero{
-    float: right;
-    width: 10%;
+
+}
+#i2{
+
+background-color: rgb(41, 41, 41);  
+}
+#slider{
+    width: 100%;
+    height: 100%;
 }
 
-/* boton home */
-#home{
-    width: 5%;
+.c1{
+   /* border: 2px solid red;
+    height: 50%;*/
+    background-image: url("../img/lamb.jpg");
+    background-size:cover; 
+     padding: 11%;
+    width: auto;
+    border: 5px solid red;
+}
+
+#HOME{
+    background: url("../img/lamb.jpg");
+     background-size:cover; 
+    
+}
+
+.title{
+   
+    color: black;
+    text-shadow: 2px 2px 5px #d4af37;
+    text-align: center;
+    padding: 2% 0% 15% 0%;
+}
+
+
+#n1{
+    background-color: rgb(65, 65, 65);
+}
+nav {
+   
+    
+    width: 100%;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.4em;
+    font-family: Georgia;
+    display: inline-block;
+    text-align: right;
+    margin:1.8% 0% 1.7% 0%;
+    
+}
+nav a{
+    list-style-type:none;
+    text-decoration: none;
+    margin:0px;
+    padding: 0.7em 5em;
+    color: white;
+}
+nav a:hover{
+   
+  color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 5px;   
+  background-color: black;
+  border-radius: 50px;   
+  transition: all 500ms ease;
+}
+.pepe{
+    height: 100%;
+
+}
+
+/* .coches{
+    border: 5px solid red;
+    padding: 11%;
+    background-color: white;
+    display: none;
+} */
+/* .imag1{
+    position: absolute;
+  top: 0px; 
+  left: 0px;
+}
+.imag2{
+    position: absolute;
+  top: 0px; 
+  left: 500px;
+} */
+
+/*---------------------vehiculos------------------*/
+#VEHICULOS{
+    display: none;
+}
+.nombre{
+    color: #d4af37;
+    text-align: center;
+    font-weight: 700;
+}
+.inf{
+    color: white;
+    text-align: center;
+}
+.cars{
+    width: 98%;
+    margin: 1% 1% 0% 1%;
+    float: left;
+    clear: both;
+}
+
+.tipos{
+    float: left;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    margin: 1% 1% 1% 1%; 
+}
+.img:hover{
+    -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+#e-tron{
+    width: 30%;
+    padding: 0% 0% 0% 1%;
+}
+#q5{
+    width: 30%;
+    padding: 0% 0% 0% 1%;
+}
+#q8{
+    width: 30%;
+    padding: 0% 0% 0% 4%;
+}
+#mustang{
+    padding: 0% 0% 0% 2%;    
+    width: 26%;
+}
+
+#r8{
+    width: 32%;
+    padding: 0% 0% 0% 3%; 
+}
+
+#civic{
+    padding: 0% 0% 0% 5%;
+    width: 24%;
+}
+
+#lexus{
+    width: 30%;
+    padding: 0% 0% 0% 0%;
+}
+#mclaren{
+    width: 27%;
+    padding: 0% 0% 0% 1%;
+}
+
+#aventador{
+    padding: 0% 0% 0% 5%;
+    width: 30%;
+}
+    
+#ferrari{
+    width: 27%;
+    padding: 0% 0% 0% 4%;
+}
+
+#chr{
+    width: 30%;
+    padding: 2% 0% 0% 2%;
+}
+#auris{
+    width: 27%;
+    padding: 1% 0% 0% 6%;
+}   
+#m2{
+    width: 25%;
+    padding: 0% 0% 0% 1%;
+}
+#focus{
+    width: 27%;
+    padding: 0% 0% 0% 7%;
+}
+
+#c3{
+    width: 31%;
+    padding: 0% 0% 0% 5%;
+}
+/*@media all and (max-width: 2000px) and (min-width: 1699px){
+    #i1{
+        margin-top: 500px
+    }
+}*/
+/* @media all and (max-width: 2000px) and (min-width: 1900px){
+    #i1{
+        margin-top: 500px
+    }
+    /*.pepe{
+        width: 100.4%;
+    }*/
+
+
+/*  ----------------------- contaco------------------- */
+
+#CONTACT{
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.separar{
+    width: 47%;
     margin: 1%;
     float: left;
-    position: fixed;
 }
+/*.dividir{
+    width: 47%;
+    height: 450px;
+    float: right;
+    display: grid;
+    justify-content: center;  
+    align-items: center;   
+}*/
 
-h1{
-    font-family: 'Courier New';
-    color: blue;
+.alinear{
+    text-align: center;  
 }
-
-/* div que contiene la noticia */
-#noticia{
-    background-color: rgba(255, 255, 255, 0.95);
-    text-align: justify;
-    margin: 1% 0% 1% 12%;
-    padding: 0% 1% 1% 1%;
-    border-radius: 5px; 
-    width: 76%;
-}
-
-/* caja con la parte comentarios */
-#comentarios{
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 5px; 
+.social {
+    width: 100%;
+    height: auto;
     float: left;
-    clear: both;
-    margin: 1% 0% 1% 12%;
-    width: 76%;
-    padding: 0% 1% 1% 1%;
+}
+/*-------------Contacto 2.0------------*/
+ .dividir{
+    width: 47%;
+    height: 447.9px;
+    float: right;
+    display: grid;
+    /*justify-content: center;  
+    align-items: center;*/
+   border: 2px solid rgb(255, 255, 255);
+    margin: 1%;   
 }
 
-/* cada uno de los comentarios */
-.comentario{
+.cont1{
+    margin-top: 18px;
+    margin-left: 50px;
+    color: rgb(255, 255, 255);
+    font-family: 'Spicy Rice', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+.pi{
     
-    width: 50%;
-    margin: 0% 0% 1% 0%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 0.5%;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: url("../img/f1.jpg");
+    background-size: cover;
+}
+.fondii{
+    background-image: url("../img/f3.jpg");
+    background-size: cover;
 }
 
-/* titulos de los articulos */
-.tittle{
-    color: blue;
-    font-size: 2em;
-}
+#vin{
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    margin-top: 15px;
+    background-color: black;
+    /*margin-top: 455px;*/
+    
+} 
 
-/* caja para añadir comentarios */
-#anadir{
-    background-color: rgba(255, 255, 255, 0.95);
-    border-radius: 5px;
+
+
+
+/* ------------------clientes---------------- */
+
+#CLIENTES{
+    display: none;
+    margin: 2% 0% 0% 0%;
+}
+.ordena1{
+    width: 100%;
+    height: 100%;
     float: left;
-    clear: both;
-    margin: 1% 0% 0% 12%;
-    width: 76%;
-    padding: 0% 1% 1% 1%;
+  
+}
+
+.client{
+    width: 25%;
+    height: 100%;
+    
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+.borde{
+    border: 4px solid white;
+}
+.ache{
+    width: 100%;   
+    height: 40px;
+}
+/* .alinear{
+     
+    margin: 10% 0% 10% 0%;
+} */
+.alinear1{
+    width: 100%;
+    height: 80px;  
+    margin: 10% 0% 10% 0%;
+}
+
+.client1{
+    width: 33%;
+    float: left;   
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+@media all and (max-width: 1555px){
+    .ache {
+        width: 100%;
+        height: 80px;
+    }
+    
+}
+@media all and (max-width: 940px){
+    .client{
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid yellow; */
+        float: left;
+        text-align: center;
+        color: white;
+        font-size: 1.5em;
+    }
+    .ache{
+        width: 100%;   
+        height: 40px;
+    }
+    
+}
+@media all and (max-width: 560px){
+    .client{
+        width: 100%;
+        
+    }
+    .client1{
+        width: 100%;
+        
+    }
+    .ache{
+        width: 100%;   
+        height: 40px;
+    }
     
 }
 
-/* input para escribir el comentario */
-#textoc{
-    width: 30%;
-    font-family: Arial;
-}
-.inputs{
-    background:transparent;
-    float: left;
-    clear: both;
-    margin: 0% 0% 1% 0%;
-    box-shadow: 2px 2px grey;
-    font-size: 1.2em;
-   
-}
-.buttons{
-    background:transparent;
-    float: left;
-    margin: 0% 0% 1% 1%;
-    box-shadow: 2px 2px grey;
-    font-size:1.2em;
-}
-#b1{
-    clear: left;
-}
-.buttons:hover{
-    cursor: pointer;
-    background-color: rgb(135,206, 250);
-    box-shadow: 2px 2px grey;
-    border: 2px solid black;
-    border-radius: 5px;
+/*----------------------------------SECCION COMPRA---------------------------------*/
+#COMPRA{
+    background: url("../img/rueda-2.jpg");
+    background-size:cover; 
+    /*margin-top: 110px;*/
+    height: 1000px;
+    display: none;
 }
 
-/* diseño responsive */
-@media all and (max-width: 1366px){
-    .comentario{width: 98%; margin: 1%;}
-    #textoc{width: 50%;}
+#textocontenedor{
+    text-align: center;
+    
 }
-@media all and (max-width: 900px){
-    .cajas{width: 47.5%}
-    #anadir{width: 98%; margin: 1%;}
-    #comentarios{width: 98%; margin: 1%;}
-    .comentario{width: 98%; margin: 1%;}
-    #textoc{width: 98%;}
+
+#textocontenedor li{
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Georgia;
+    text-align: left;
+    margin:2% 2% 2% 0%;
+    color:white;
+    margin-top:50px;
 }
-@media all and (max-width: 600px){
-    .cajas{width: 98%;}
-    #home{width: 98%; clear: both; position: relative;}
-    #home img{width: 10%;margin-left: 45%;}
-    #noticia{width: 98%; margin: 1%;}
-    #anadir{width: 98%; margin: 1%;}
-    #comentarios{width: 98%; margin: 1%;}
-    .comentario{width: 98%; margin: 1%;}
-    #textoc{width: 98%;}
+#textocontenedor li p{
+    margin-top:5px;
+    font-size: 1em;
 }
+
+#encabezado{
+    border-bottom: 10px solid white;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.columnaencab{
+    float: left;
+    width: 20%;
+}
+
+#columna2{
+   margin-left:12em;
+}
+#columna3{
+    margin-left:12em;
+}
+
+#texto{
+    font-size: 1.5em;
+    font-family: Georgia;
+    /* text-align: center; */
+    color:white;
+    margin-top:10px;
+}
+
+.columnatexto{
+    float: left;
+    margin-left: 17.5%;
+    width: 20%;
+    font-size: 1em;
+    text-align: left;
+}
+
+#columnap1{
+    font-size: 1em;
+}
+#columnap2{
+   margin-left:6%;
+   font-size: 1em;
+}
+#columnap3{
+    margin-left:10%;
+    font-size: 1em;
+}
+
+@media all and (max-width: 1600px) and (min-width: 1125px){
+    #columna1{font-size: 0.7em;}
+    #columna2{font-size: 0.7em;}
+    #columna3{font-size: 0.7em;}
+}
+
+@media all and (max-width: 1125px){
+    #columna1{font-size: 0.4em;}
+    #columna2{font-size: 0.4em;}
+    #columna3{font-size: 0.4em;}
+    #columnap1{font-size:12px;}
+    #columnap2{font-size:12px;}
+    #columnap3{font-size:12px;}    
+}
+
+
+@media all and (max-width: 648px){
+    #columna2{margin-left:6em;}
+    #columna3{margin-left:6em;}
+}
+
+@media all and (max-width: 493px){
+    #columna2{margin-left:1.7em;}
+    #columna3{ margin-left:1.7em;}
+    #columna1{font-size: 0.3em;}
+    #columna2{font-size: 0.3em;}
+    #columna3{font-size: 0.3em;}
+    #columnap1{font-size:8px;}
+    #columnap2{font-size:8px;}
+    #columnap3{font-size:8px;}  
+    #columna1{ margin-left: 2em;} 
+}
+@media all and (max-width: 750px){
+    #e-tron{width: 90%;}
+    #q5{width: 90%;}
+    #q8{width: 90%;}
+    #mustang{width: 86%;}
+    #r8{width: 92%;}
+    #civic{width: 84%;}
+    #lexus{width: 90%;}
+    #mclaren{width: 87%;}
+    #aventador{width: 90%;}   
+    #ferrari{width: 87%;}
+    #chr{width: 90%;}
+    #auris{width: 87%;}   
+    #m2{width: 85%;}
+    #focus{width: 87%;}
+    #c3{width: 91%;}
+}
+
+@media all and (max-width: 1900px){
+    .pepe{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media all and (max-width: 773px){
+    .ache {
+        width: 100%;
+        height: 80px;
+    }
+    
+}
+@media all and (max-width: 1135px){
+    .ache1 {
+        width: 100%;
+        height: 80px;
+    }
+    .alinearr{
+        width: 100%;
+        height: 80px;  
+        margin: 10% 0% 10% 0%;
+    }
+
+    
+}
+	
+		

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="keys">
+    <div id="d65" data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div id="d83" data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div id="d68" data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div id="d70" data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div id="d71" data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div id="d72" data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div id="d74" data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div id="d75" data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div id="d76" data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio id="a65" data-key="65" src="sounds/clap.wav"></audio>
+  <audio id="a83" data-key="83" src="sounds/hihat.wav"></audio>
+  <audio id="a68" data-key="68" src="sounds/kick.wav"></audio>
+  <audio id="a70" data-key="70" src="sounds/openhat.wav"></audio>
+  <audio id="a71" data-key="71" src="sounds/boom.wav"></audio>
+  <audio id="a72" data-key="72" src="sounds/ride.wav"></audio>
+  <audio id="a74" data-key="74" src="sounds/snare.wav"></audio>
+  <audio id="a75" data-key="75" src="sounds/tom.wav"></audio>
+  <audio id="a76" data-key="76" src="sounds/tink.wav"></audio>
+
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function (){
+    
+    $(document).keydown(function(event){
+      var tecla=event.which;
+      
+      $("#d"+tecla).addClass("playing");
+      if(document.getElementById("a"+tecla)!=null){
+        document.getElementById("a"+tecla).currentTime = 0;
+        document.getElementById("a"+tecla).play();
+      }
+      
+    })
+
+    $(document).keyup(function (event){
+      var tecla=event.which;
+
+      $("#d"+tecla).removeClass("playing");
+    }) 
+  })
+</script>
+
+
+</body>
+</html>
