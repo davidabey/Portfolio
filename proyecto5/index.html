@@ -77,7 +77,19 @@
       var tecla=event.which;
 
       $("#d"+tecla).removeClass("playing");
-    }) 
+    })
+
+    // click
+    $(".key").click(function(){
+        var tecla=$(this).attr("data-key");
+
+        $("#d"+tecla).addClass("playing");
+        document.getElementById("a"+tecla).currentTime = 0;
+        document.getElementById("a"+tecla).play();
+        setTimeout(function(){$("#d"+tecla).removeClass("playing"); },300);
+    })
+      
+
   })
 </script>
 
